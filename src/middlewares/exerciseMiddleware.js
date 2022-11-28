@@ -5,7 +5,7 @@ export const exerciseMiddleware = (store)=>{
             switch(action.type){
                 case "ADD_HEP":
                     console.log(payload,"inside exerciseMW")
-                    const res = await fetch('http://localhost:1337/api/addExercise',{
+                    const res = await fetch('https://pt2go-api.onrender.com/api/addExercise',{
                         method: 'POST',
                         headers : {
                             'Content-Type':'application/json'

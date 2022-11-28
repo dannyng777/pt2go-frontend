@@ -4,7 +4,7 @@ export const registrationMiddleware = (store)=>{
             switch (action.type) {
                 case "REGISTER_USER":
                     const {payload} = action
-                    const res = await fetch('http://localhost:1337/api/register',{
+                    const res = await fetch('https://pt2go-api.onrender.com/api/register',{
                         method: 'POST',
                         headers : {
                             'Content-Type':'application/json'
