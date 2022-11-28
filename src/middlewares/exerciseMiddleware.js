@@ -19,7 +19,7 @@ export const exerciseMiddleware = (store)=>{
                     return data;
                 case "DELETE_HEP":
                     console.log(payload,"inside delete MW")
-                    const resp = await fetch('http://localhost:1337/api/deleteExercise',{
+                    const resp = await fetch('https://pt2go-api.onrender.com/api/deleteExercise',{
                         method: 'POST',
                         headers : {
                             'Content-Type':'application/json'
