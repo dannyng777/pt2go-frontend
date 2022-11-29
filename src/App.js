@@ -12,7 +12,6 @@ import AddCustomExercise from './components/AddCustomExercise';
 import Profile from './components/Profile';
 
 function App() {
-
   return (
     <BrowserRouter>
           <NavBar />
